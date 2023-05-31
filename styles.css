@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+/* common styles */
 * {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -10,7 +11,7 @@
 .btn-primary {
   height: 3rem;
   padding: 0px 1rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   background-color: #fd6e0a;
   color: #fff;
   font-size: 1rem;
@@ -19,10 +20,20 @@
 }
 
 /* header and nav styles */
+.header{
+  height: 100vh;
+  background: #fff8f3;
+  background-image: url(images/header_bg.png), url(images/developer.png);
+  background-repeat: no-repeat;
+  background-position:  bottom right, left;
+  /* background-blend-mode: darken; */
+}
+
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 3rem 12rem;
+  margin: 0rem 12rem;
+  padding: 3rem 0rem;
 }
 .nav-title {
   font-weight: 800;
@@ -43,4 +54,41 @@ nav li {
   margin: 0 12rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 3rem;
+}
+.banner-sub-title{
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.banner-desc{
+  color: #fd6e0a;
+  font-size: 1.125rem;
+  margin-bottom: 1.8rem;
+}
+
+/* main section */
+main{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* about section styles */
+.about{
+  margin: 8rem 0rem;
+  padding: 5rem ;
+  background-color: #fff8f3;
+  border-radius: 10px;
+
+}
+.section-title{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-desc{
+  columns: #757575;
+  margin-bottom: 30px;
 }
