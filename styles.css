@@ -138,7 +138,8 @@ main {
 
 /* about section styles */
 .about,
-.skills {
+.skills,
+.resume {
   margin: 8rem 0rem;
   padding: 8rem;
   background-color: #fff8f3;
@@ -147,7 +148,7 @@ main {
 }
 .section-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .section-desc {
   /* color: #757575; */
@@ -168,7 +169,7 @@ main {
 
 /* skills & experiences section */
 .tech-skills {
-  margin-top: 4rem !important;
+  /* margin-top: 4rem !important; */
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -184,4 +185,32 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* resume section  */
+.resume {
+  text-align: left;
+}
+.resume-content {
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 1rem; */
+}
+.resume-item{
+  margin: 2rem 0rem;
+}
+.resume-item .title {
+  color: #5a514b;
+  font-weight: 700;
+  font-size: 20px;
+}
+.resume-item .sub-title {
+  color: #5a514b;
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 1rem 0rem;
+}
+.resume-button{
+  margin-top: 50px;
+  text-align: center;
 }
