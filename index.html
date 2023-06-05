@@ -13,11 +13,10 @@
       <nav>
         <h2 class="nav-title">mahmuda<span class="text-primary">_</span></h2>
         <ul>          
-          <li>About</li>
-          <li>Work</li>
-          <li>Skills</li>
-          <li>Testimonials</li>
-          <li><button class="btn-primary">Contact</button></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Work</a></li>
+          <li><a href="#footer"><button class="btn-primary">Contact</button></a></li>
         </ul>
       </nav>
 
@@ -45,7 +44,7 @@
     </header>
 
     <main>
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="section-title">About Me</h2>
         <p class="section-desc">
           A front-end developer with 2 years of experience designing and developing modern, responsive websites and web applications. I specialize in creating visually appealing, user-friendly interfaces with HTML, CSS, and JavaScript, and have worked with a variety of frameworks and libraries, including React, Vue.js, and Angular.<br/><br/>Along with my technical abilities, I have a strong sense of collaboration and like getting to know my customers in order to better understand their needs and develop solutions that go above and beyond their expectations.
@@ -69,7 +68,7 @@
           </div>
         </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2 class="section-title">Technical Skills</h2>
         <div class="tech-skills">
           <div><img src="images/icons/html.png"/></div>
@@ -83,7 +82,7 @@
           <div><img src="images/icons/git.png"/></div>
         </div>        
       </section>
-      <section class="resume">
+      <section class="resume" id="resume">
         <h2 class="section-title">Summary of My Resume</h2>
         <div class="resume-content">
           <div>
@@ -127,6 +126,34 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <div>
+        <h3 class="section-title left-aligned">Let's Talk,</h3>
+        <p>Please fill out the form on this section to connect with me.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100009156817243">
+            <img src="images/icons/facebook.png" alt="" srcset=""></a>
+          <a href="#">
+            <img src="images/icons/twitter.png" alt="" srcset=""></a>
+          <a href="https://www.linkedin.com/in/mahmuda-akter-mitu/">
+            <img src="images/icons/insta.png" alt="" srcset=""></a>
+        </div>
+        <p class="copyright">&copy;<span id="current-year"></span> MAHMUDA<br/>ALL RIGHTS RESERVED</p>
+      </div>
+      <div>
+        <h3 class="section-title left-aligned">But You First</h3>
+        <form action="">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
+          <input type="submit" value="Submit" class="btn-primary">
+        </form>
+      </div>      
+    </footer>
+    <script>
+      let year = document.getElementById("current-year")
+
+      year.innerHTML = new Date().getFullYear()
+    </script>
   </body>
 </html>

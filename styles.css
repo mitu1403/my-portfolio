@@ -23,10 +23,14 @@
   filter: drop-shadow(2px 1px 4px #e2e0de);
 }
 
+a {
+  text-decoration: none;
+}
 /* header and nav styles */
 .header {
   height: 100vh;
   background: #fff8f3;
+  background-image: url(images/bg.png);
   /* background-blend-mode: darken; */
 }
 
@@ -113,7 +117,7 @@ nav li {
   transform: scale(1.3);
 }
 .banner-right div:nth-child(3) {
-  margin-left: 10rem;
+  margin-left: 15rem;
   margin-top: 50px;
 }
 .banner-right div:nth-child(3) img {
@@ -142,7 +146,7 @@ main {
 .resume {
   margin: 8rem 0rem;
   padding: 8rem;
-  background-color: #fff8f3;
+  background-color: rgb(255, 248, 243);
   border-radius: 10px;
   text-align: center;
 }
@@ -168,8 +172,12 @@ main {
 }
 
 /* skills & experiences section */
+.skills{
+  background-image: url(images/dot.png);
+  background-repeat: no-repeat;
+  background-position: 51% 25%;
+}
 .tech-skills {
-  /* margin-top: 4rem !important; */
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -190,13 +198,20 @@ main {
 /* resume section  */
 .resume {
   text-align: left;
+  background: linear-gradient(rgba(255, 248, 243,.95), rgba(255, 248, 243, 0.95)),
+  url(images/develop.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover, 40% 45%;
+  /* background-blend-mode:difference; */
+
 }
 .resume-content {
   display: flex;
   justify-content: space-evenly;
   /* gap: 1rem; */
 }
-.resume-item{
+.resume-item {
   margin: 2rem 0rem;
 }
 .resume-item .title {
@@ -210,7 +225,48 @@ main {
   font-size: 1rem;
   margin: 1rem 0rem;
 }
-.resume-button{
+.resume-button {
   margin-top: 50px;
   text-align: center;
+}
+
+footer {
+  background: #fff8f3;
+  background-image: url(images/msg.png);
+  background-repeat: no-repeat;
+  background-position: 15% 20%;
+  display: flex;
+  gap: 5rem;
+  padding: 6rem 12rem;
+}
+footer div {
+  width: 50%;
+  text-align: left;
+}
+footer div h3 {
+  font-size: 2rem;
+}
+.left-aligned {
+  text-align: left;
+}
+.social-icons {
+  margin: 1rem 0rem;
+}
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+footer input[type="text"],
+input[type="email"],
+textarea {
+  margin-bottom: 20px;
+  border: 0;
+  width: 100%;
+  padding: 18px;
+}
+.copyright {
+  margin-top: 46.5vh;
+  font-weight: lighter;
+  font-size: 14px;
 }
