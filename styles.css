@@ -172,7 +172,7 @@ main {
 }
 
 /* skills & experiences section */
-.skills{
+.skills {
   background-image: url(images/dot.png);
   background-repeat: no-repeat;
   background-position: 51% 25%;
@@ -198,13 +198,15 @@ main {
 /* resume section  */
 .resume {
   text-align: left;
-  background: linear-gradient(rgba(255, 248, 243,.95), rgba(255, 248, 243, 0.95)),
-  url(images/develop.png);
+  background: linear-gradient(
+      rgba(255, 248, 243, 0.95),
+      rgba(255, 248, 243, 0.95)
+    ),
+    url(images/develop.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover, 40% 45%;
   /* background-blend-mode:difference; */
-
 }
 .resume-content {
   display: flex;
